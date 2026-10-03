@@ -75,21 +75,28 @@ demonstrates it.
 
 ---
 
-## Known issues
+## Fixed after the first pass
 
-Left as written rather than quietly fixed, so the repo stays an honest record.
+Both were genuine errors in my class code. I found them while writing up this concept map and
+fixed them in the commit history rather than quietly editing, so the change is visible.
 
 ### `factorial.py` — print inside the loop
 
-`print(fact)` sits inside the `for` block, so entering `5` prints `1, 2, 6, 24, 120` — the
-partial products — instead of just the final answer. The accumulation itself is correct; only
-the reporting is in the wrong place.
+`print(fact)` sat inside the `for` block, so entering `5` printed `1, 2, 6, 24, 120` — the
+partial products — instead of the final answer. The accumulation itself was correct; only the
+reporting was in the wrong place. Accumulating and reporting are separate concerns, so the
+print now sits below the loop and `5` gives `120`.
 
-### `number_triangle.py` — exercise is commented out
+### `number_triangle.py` — exercise never implemented
 
-The nested-loop triangle from class is fully commented out and the file just prints `sagar`.
-The `range(n, 1, -1)` logic in the comment also counts down when a left-aligned triangle
-should count up.
+The nested-loop triangle from 2 Sep was fully commented out, with a placeholder `print("sagar")`
+as the only live code. The commented version also counted down with `range(n, 1, -1)`, which is
+backwards for a left-aligned triangle. Implemented with the outer loop counting up, and verified
+against `n = 5`.
+
+## Known issues
+
+Still unfixed, and left visible rather than tidied away.
 
 ### `student_record.py` — variable shadows a builtin
 

@@ -70,7 +70,15 @@ analysis project.
 
 ## Note on the code
 
-The scripts are kept exactly as written in class. I have deliberately not rewritten them into
-cleaner form, so the repo reflects what I actually wrote rather than a tidied-up version of it.
-Where something is wrong I would rather it stay visible and get fixed properly — see
-[`docs/concepts-covered.md`](docs/concepts-covered.md) for the notes on known issues.
+The scripts are mostly kept exactly as written in class — I have deliberately not rewritten
+them into a cleaner house style, so the repo reflects what I actually wrote rather than a tidied
+version of it.
+
+Two genuine errors did turn up while writing this up, and both are fixed in the commit history
+rather than quietly edited: the factorial script was printing its partial products instead of
+the answer, and the number triangle had never actually been implemented. Both are written up in
+[`docs/concepts-covered.md`](docs/concepts-covered.md).
+
+Two smaller ones are still open and documented in the same place — a variable shadowing the
+builtin `dict`, and one name reused for unrelated types. Leaving those visible is more useful
+than hiding them.
