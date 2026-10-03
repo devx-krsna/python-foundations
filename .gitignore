@@ -1,23 +1,10 @@
-# Byte-compiled / optimised files
+# Byte-compiled files
 __pycache__/
 *.py[cod]
-*$py.class
 
-# Virtual environments
+# Environments
 .venv/
 venv/
-env/
 
-# Distribution / packaging
-build/
-dist/
-*.egg-info/
-
-# Jupyter
-.ipynb_checkpoints/
-
-# Editors and OS
+# Editor files
 .vscode/
-.idea/
-.DS_Store
-Thumbs.db
